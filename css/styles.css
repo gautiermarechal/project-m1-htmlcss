@@ -306,6 +306,15 @@ body {
   background-color: rgb(50, 49, 49);
 }
 
+.cool-text-section-box:hover {
+  transition: 0.2s;
+  background-color: teal;
+}
+
+.cool-text-section-box:hover .cool-text-section-box {
+  color: white;
+}
+
 .cool-text-section-box h2 {
   color: red;
 }
