@@ -44,6 +44,26 @@ body {
 
 .nav-item {
   margin: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 90%;
+  margin: 0 auto;
+  height: 3px;
+  background-color: #000;
+  width: 0%;
+  transition: width 0.2s ease;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.nav-item:hover .slider {
+  width: 100%;
 }
 
 .nav-item-mobile {
@@ -316,4 +336,129 @@ body {
 .slick-gradient-section p {
   font-size: 30px;
   margin: 40px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.photo-gallery img {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-item {
+  width: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item-title {
+  position: absolute;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(14, 13, 19, 0.3);
+}
+
+.gallery-item:hover img {
+  transition: 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-item:hover .gallery-item-title {
+  display: flex;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.register-section {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-section,
+.send-input,
+.daily-checkbox,
+label {
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.register-title {
+  margin-bottom: 15px;
+}
+
+.daily-checkbox input {
+  border-color: grey;
+  transform: scale(1.5);
+}
+
+.send-input {
+  display: flex;
+  height: 40px;
+}
+
+.send-input input {
+  width: 100%;
+  border-color: grey;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.send-input button {
+  border-radius: 5px;
+  border-color: grey;
+  background-color: grey;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.send-input button:hover {
+  cursor: pointer;
+}
+
+.line-footer {
+  width: 90%;
+  text-align: center;
+  color: grey;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: grey;
+}
+
+.footer-col-item {
+  margin: 35px;
 }
