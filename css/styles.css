@@ -89,7 +89,14 @@ body {
   justify-content: center;
 }
 
+.dropdown:hover {
+  width: 100vw;
+  top: 75px;
+  overflow-x: hidden;
+}
+
 .dropdown:hover .nav-content-mobile {
+  height: 100px;
   display: flex;
 }
 
@@ -356,6 +363,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  line-height: 0;
 }
 
 .photo-gallery img {
