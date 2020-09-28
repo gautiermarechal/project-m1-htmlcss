@@ -41,6 +41,21 @@ body {
   width: 100vw;
   justify-content: center;
   position: absolute;
+  margin-top: 80px;
+  padding-top: 10px;
+  left: 0;
+  position: fixed;
+}
+
+.nav-item-mobile {
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-item-mobile:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  transition: 0.2s;
 }
 
 .nav-item {
@@ -96,7 +111,6 @@ body {
 }
 
 .dropdown:hover .nav-content-mobile {
-  height: 100px;
   display: flex;
 }
 
